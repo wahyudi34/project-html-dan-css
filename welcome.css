@@ -1,0 +1,13 @@
+html{
+    background-color: steelblue;
+    font-size: 100px;
+    text-align: center;
+}
+
+h1 {
+  font-size: 200px;
+  transition: all 4s;
+}
+h1:hover {
+  font-size: 30px;
+}

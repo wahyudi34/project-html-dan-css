@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form kritik dan saran</title>
+        <link href="Form page.css" rel="stylesheet" type="text/css" media="screen">
+    </head>
+    <body>
+        <h1>Selamat datang di form kritik dan saran</h1>
+        <p>disini kalian akan mengisi beberapa form dan dapat mengisi saran dan kritik untuk website ini</p>
+
+        <form>
+
+            <!-- Bagian informasi diri pribadi-->
+            <div>
+                <fieldset>
+                    <legend><b>Informasi pribadi</b></legend>
+                    <p>
+                        <label for="full-name">Nama lengkap</label>
+                        <input id="full-name" name="fullName" type="text">
+                    </p>
+                    <p>
+                        <label for="email">Alamat email</label>
+                        <input id="email" name="email" type="email">
+                    </p>
+
+                    <form>
+                        <label for="jenis-kelamin">Jenis kelamin:</label>
+                        <input id="laki-laki-radio" type="radio" name="jenis-kelamin" value="laki-laki">
+                        <label for="laki-laki-radio">Laki - laki</label>
+                        <input id="perempuan-radio" type="radio" name="jenis-kelamin" value="perempuan">
+                        <label for="perempuan-radio">Perempuan</label>
+                    </form>
+
+                    <br><br>
+                    <form>
+                        <label for="hobi">Hobi</label>
+                        <input id="membaca-checkbox" type="checkbox" name="hobi" value="membaca">
+                        <label for="membaca-checkbox">Membaca</label>
+                        <input id="menulis-checkbox" type="checkbox" name="hobi" value="menulis">
+                        <label for="menulis-checkbox">menulis</label>
+                        <input id="menggambar-checkbox" type="checkbox" name="hobi" value="menggambar">
+                        <label for="menggambar-checkbox">menggambar</label>
+                    </form>
+
+                    <form>
+                        <p>
+                            <label for="pemprograman">Bahasa pemprograman yang menurutmu paling menarik?</label>
+                            <input type="text" name="pemprograman" list="programmingLangs" />
+                            <datalist id="programmingLangs">
+                                <select name="altProgrammingLangs">
+                                    <option value="java">Java</option>  
+                                    <option value="php">PHP</option>
+                                    <option value="c">c</option>
+                                    <option value="visual-basic">Visual basic</option>
+                                    <option value="python">Python</option>
+                                </select>
+                            </datalist>
+                        </p>
+                    </form>
+                </fieldset>
+            </div>
+            
+            <!-- bagian kritik dan saran menggunakan textarea-->
+            <div>
+                <fieldset>
+                    <legend><b>Kritik dan saran</b></legend>
+                    <p>
+                        <label for="kritik">Kritik</label>
+                        <textarea cols="100" rows="5">Kritik saya adalah</textarea>
+                    </p>
+                    <p>
+                        <label for="saran">Saran</label>
+                        <textarea cols="100" rows="5">Saran saya adalah</textarea>
+                    </p>
+
+                    <form action="welcome.html" method="POST">
+                        <input type="submit" value="Kirim" />
+                    </form>
+                </fieldset>
+            </div>
+        </form>
+    </body>
+</html>
