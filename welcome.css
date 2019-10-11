@@ -1,5 +1,8 @@
 html{
     background-color: steelblue;
+    background-image: url("folder gambar/pemandangan.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 100px;
     text-align: center;
 }
